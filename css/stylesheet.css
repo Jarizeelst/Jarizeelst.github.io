@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*body{
+    background: rgb(200,245,150);
+    background: linear-gradient(90deg, rgba(200,245,150,1) 0%, rgba(91,219,240,1) 100%);
+}*/
+body {
+    background: rgb(200, 245, 150);
+    background: linear-gradient(90deg, rgb(145, 217, 129) 0%, rgb(7, 161, 150) 100%);
+}
+html,body,header{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI" , Tahoma, Verdana;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    height: 7vh;
+    background-color: #24252B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 5px 5px rgb(0,0,0,0.4);
+}
+h3{
+    padding: 1em;
+    color: #f5f5f5;
+    letter-spacing: 3px;
+}
+p{
+    font-size: 20px;
+    color: #24252B;
+}
+h2{
+    font-size: 40px;
+    color: #24252B;
+}
+ul, li {
+    list-style: none;
+    display: flex;
+    padding: 1em;
+    margin: 0;
+}
+li{
+    cursor:pointer ;
+    transition: all .5s ease-in-out;
+    margin: 0.5em;
+    padding: 10px 15px;
+    color: #f5f5f5;
+    border-radius: 20px;
+}
+li:hover{
+    background-color: #37C9E0;
+    box-shadow: 3px 5px 7px ;
+}
+.intro{
+    font-family: SansSerif;
+    display: flex;
+    text-align: center;
+    height: 90vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #24252B;
+}
+.intro h1{
+    font-size: 100px;
+    color: #24252B;
+}
+.intro2{
+    font-family: SansSerif;
+    font-size: 20px;
+    color: #24252B;
+}
+#pong{
+    font-family: SansSerif;
+    color: #24252B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 110px;
+    margin-left: 100px;
+}
+#img_Pong{
+    margin-right: 5px;
+}
+#bier img{
+    height: 300px;
+    width: 600px;
+}
+#bier{
+    font-family: SansSerif;
+    color: #24252B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 90px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#About_Me h1{
+    text-decoration: underline;
+    font-family: SansSerif;
+    font-size: 100px;
+    color: #24252B;
+}
+#About_Me{
+    font-family: SansSerif;
+    display: flex;
+    text-align: center;
+    height: 90vh;
+    flex-direction: column;
+    color: #24252B;
+    margin-top: 140px;
+}
+#noPFP{
+    justify-content: left;
+    display: flex;
+    height: 40%;
+    width: 40%;
+    margin-top: -220px;
+}
+#Contact_Me{
+    text-decoration: underline;
+    font-family: SansSerif;
+    font-size: 100px;
+    color: #24252B;
+}
+.contact{
+    padding-block: 70px;
+    font-family: SansSerif;
+}
+.contact h1{
+    font-size: 100px;
+}
+.contact-container{
+    margin: 48px 1rem 0;
+    border-radius: 60px 60px 60px 60px;
+    background-color: #fff;
+    padding: 52px;
+    box-shadow: 0 30px 40px 0 rgba(113, 113, 113, 0.2);
+}
+.section-title{
+    text-align: center;
+    font-size: 2rem;
+}
+.form-group{
+    margin-top: 1.2rem;
+    font-family: SansSerif;
+}
+.form-group .label{
+    font-size: 1.2rem;
+    font-family: SansSerif;
+}
+.form-group .input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #b4b4b4;
+    margin-top: 1.2rem;
+    outline: none;
+    color: #111;
+    font-size: 1rem;
+    font-family: SansSerif;
+}
+/*.contact-container .button{
+    border: none;
+    border-radius: 10px;
+    margin: 2rem auto 0;
+    box-shadow: 0 14px 16px 0 rgba(0, 146, 218, 0.1);
+    background-color: #37C9E0;
+    margin: 1rem auto;
+    display: block;
+    font-size: 1rem;
+    font-family: SansSerif;
+}*/
+.contact-container .button{
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #000;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: 1px solid #b4b4b4;
+    position: relative;
+    background: #fff;
+    transition: 0.1s;
+    margin-top: 10px;
+}
+button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%,
+    rgba(145, 217, 129) 17.8%, rgba(7, 161, 150) 100.2% );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+button:active{
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle
+    farthest-corner at 10% 20%, rgb(145, 217, 129) 0%, rgb(7, 161, 150) 100%) ;
+    transition: 0.5s;
+}
+
+#icons{
+    color: black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+#insta{
+    color: black;
+    padding: 5px;
+}
+#linkedin{
+    color: black;
+    padding: 5px;
+}
+#twitter{
+    color: black;
+    padding: 5px;
+}
