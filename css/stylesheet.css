@@ -22,7 +22,7 @@ html,body,header{
     background-color: #24252B;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     box-shadow: 3px 5px 5px rgb(0,0,0,0.4);
 }
 h3{
@@ -56,6 +56,16 @@ li:hover{
     background-color: #37C9E0;
     box-shadow: 3px 5px 7px ;
 }
+#english{
+    text-align: right;
+    font-size: 16px;
+}
+#dutch{
+    text-align: right;
+    font-size: 16px;
+}
+
+
 .intro{
     font-family: SansSerif;
     display: flex;
