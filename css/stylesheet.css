@@ -21,8 +21,9 @@ html,body,header{
     height: 7vh;
     background-color: #24252B;
     display: flex;
+    align-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     box-shadow: 3px 5px 5px rgb(0,0,0,0.4);
 }
 h3{
@@ -53,25 +54,14 @@ li{
     border-radius: 20px;
 }
 li:hover{
-    background-color: #37C9E0;
+    background-color: #000000;
     box-shadow: 3px 5px 7px ;
 }
-#english{
-    text-align: right;
-    font-size: 16px;
-}
-#dutch{
-    text-align: right;
-    font-size: 16px;
-}
-
-
 .intro{
     font-family: SansSerif;
-    display: flex;
+    /*display: flex;*/
     text-align: center;
-    height: 90vh;
-    width: 100vw;
+    margin-top: 200px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -119,12 +109,13 @@ a{
     font-family: SansSerif;
     font-size: 100px;
     color: #24252B;
+    margin-bottom: 20px;
 }
 #About_Me{
     font-family: SansSerif;
     display: flex;
     text-align: center;
-    height: 90vh;
+    height: 300px;
     flex-direction: column;
     color: #24252B;
     margin-top: 140px;
@@ -132,9 +123,11 @@ a{
 #noPFP{
     justify-content: left;
     display: flex;
-    height: 40%;
-    width: 40%;
+    height: 10% vh;
+    width: 10% vw;
     margin-top: -220px;
+    margin-left: -75px;
+    z-index: -1;
 }
 #Contact_Me{
     text-decoration: underline;
@@ -178,17 +171,6 @@ a{
     font-size: 1rem;
     font-family: SansSerif;
 }
-/*.contact-container .button{
-    border: none;
-    border-radius: 10px;
-    margin: 2rem auto 0;
-    box-shadow: 0 14px 16px 0 rgba(0, 146, 218, 0.1);
-    background-color: #37C9E0;
-    margin: 1rem auto;
-    display: block;
-    font-size: 1rem;
-    font-family: SansSerif;
-}*/
 .contact-container .button{
     width: 165px;
     height: 62px;
@@ -240,4 +222,97 @@ button:active{
 #twitter{
     color: black;
     padding: 5px;
+}
+#ButtonT{
+    font-size: 16px;
+}
+#skills h1{
+    text-decoration: underline;
+    font-family: SansSerif;
+    font-size: 100px;
+    color: #24252B;
+}
+#skills{
+    font-family: SansSerif;
+    display: flex;
+    text-align: center;
+    height: 90vh;
+    flex-direction: column;
+    color: #24252B;
+    margin-top: 140px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Sarala&display=swap");
+
+svg {
+    width: 100%; height: 100%;
+}
+svg text {
+    animation: stroke 4s infinite alternate;
+    stroke-width: 2;
+    stroke: #000000;
+    font-size: 130px;
+}
+@keyframes stroke {
+    0%   {
+        fill: rgba(36,37,43,0); stroke: rgba(0,0,0,1);
+        stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: rgba(36,37,43,0); stroke: rgba(0,0,0,1); }
+    80%  {fill: rgba(36,37,43,0); stroke: rgba(0,0,0,1); stroke-width: 3; }
+    100% {
+        fill: rgba(36,37,43,1); stroke: rgba(0,0,0,0);
+        stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+}
+#skills .fa-brands{
+    font-size: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+h4{
+    color: black;
+    font-size: 30px;
+    font-family: SansSerif;
+}
+#skills {
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.skill {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.bowl {
+    width: 150px;
+    height: 100px;
+    background-color: #24252B; /* Bowl color */
+    border-radius: 50% 50% 0 0; /* Creates the semicircle shape */
+    position: relative;
+    overflow: hidden;
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Text color */
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
 }
