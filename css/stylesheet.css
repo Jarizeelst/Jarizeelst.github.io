@@ -98,7 +98,21 @@ li:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 110px;
     margin-left: 90px;
+}
+#spg img{
+    height: 300px;
+    width: 600px;
+}
+#spg{
+    font-family: SansSerif;
+    color: #24252B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 110px;
+    margin-left: 100px;
 }
 a{
     text-decoration: none;
