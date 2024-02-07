@@ -8,7 +8,7 @@
 }*/
 body {
     background: rgb(200, 245, 150);
-    background: linear-gradient(90deg, rgb(145, 217, 129) 0%, rgb(7, 161, 150) 100%);
+    background: linear-gradient(90deg, rgb(1, 72, 114) 0%, rgb(153, 232, 208) 100%);
 }
 html,body,header{
     margin: 0;
