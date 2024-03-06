@@ -317,15 +317,15 @@ h4{
 }
 .html{
     width: 85%;
-    animation: html 1s;
+    animation: html 3s;
 }
 .css{
     width: 70%;
-    animation: css 1s;
+    animation: css 3s;
 }
 .javascript{
     width: 20%;
-    animation: javascript 1s;
+    animation: javascript 3s;
 }
 @keyframes html{
     0%{
