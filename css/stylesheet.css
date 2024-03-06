@@ -309,7 +309,7 @@ h4{
     background:linear-gradient(90deg, rgb(1, 72, 114) 0%, rgb(153, 232, 208) 100%);
 }
 .skill .bar:hover{
-    box-shadow: 0 14px 28px rgba( 0, 0, 0, 0.25), 0 10px 10px rgba( 0, 0, 0, 0.22 );
+    box-shadow: 0 14px 28px rgba(241, 241, 241, 0.25), 0 10px 10px rgba(245, 245, 245, 0.22);
 }
 .html{
     width: 85%;
