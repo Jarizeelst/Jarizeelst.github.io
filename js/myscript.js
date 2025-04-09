@@ -1,10 +1,11 @@
 let popUp = document.getElementById("cookiePopup");
+console.log(popUp);
 //When user clicks the accept button
 document.getElementById("acceptCookie").addEventListener("click", () => {
     //Create date object
     let d = new Date();
     //Increment the current time by 1 minute (cookie will expire after 1 minute)
-    d.setMinutes(0.2 + d.getMinutes());
+    d.setDate(365 + d.getDay());
     //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
     document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
     //Hide the popup
@@ -18,10 +19,12 @@ const checkCookie = () => {
     //Check for our cookie
     if (input[0] == "myCookieName") {
         //Hide the popup
+        console.log("found cookie");
         popUp.classList.add("hide");
         popUp.classList.remove("show");
     } else {
         //Show the popup
+        console.log("found no cookie");
         popUp.classList.add("show");
         popUp.classList.remove("hide");
     }
@@ -30,5 +33,5 @@ const checkCookie = () => {
 window.onload = () => {
     setTimeout(() => {
         checkCookie();
-    }, 2000);
+    }, 500);
 };

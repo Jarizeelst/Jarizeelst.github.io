@@ -365,6 +365,7 @@ h4{
     padding: 2em 1.4em;
     border-radius: 6px;
     transition: all 0.5s ease-in;
+    z-index: 99;
 }
 #cookiePopup img {
     display: block;
