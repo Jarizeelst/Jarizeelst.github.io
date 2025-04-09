@@ -4,7 +4,7 @@ document.getElementById("acceptCookie").addEventListener("click", () => {
     //Create date object
     let d = new Date();
     //Increment the current time by 1 minute (cookie will expire after 1 minute)
-    d.setMinutes(2 + d.getMinutes());
+    d.setMinutes(0.2 + d.getMinutes());
     //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
     document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
     //Hide the popup
