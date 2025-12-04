@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './style.css';
+import './src/style.css';
 import {
     Github, Linkedin, Mail, MapPin, Phone, Download,
     Code2, User, Briefcase, GraduationCap, Globe, Languages
-} from 'lucide-react';
+} from 'lucide-react';  
 
 const Portfolio = () => {
     const [activeSection, setActiveSection] = useState('home');
